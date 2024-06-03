@@ -11,7 +11,7 @@
   <h1>Candidate Application Form</h1>
   <p id="data"></p>
 <div class="form-container">
-  <form id="myForm" action="https://script.google.com/macros/s/AKfycbyGvb7X4wFKGSxKzjigWOOhM97n-bsbaYKMcT_eaiQ/dev" method="post">
+  <form id="myForm" action="https://script.google.com/macros/s/AKfycbyjp-ZLv2iwvUSOn-6YCEzXgNczBGTIYIPm_r39QFfNUshOuxDGuK7fRQZMA1g6lb9y/exec" method="post">
     
    <div>
       <label for="Name">Candidate Name:</label>
@@ -53,36 +53,54 @@
 </div>
 
      
-    <div>
-      <label>Qualification:</label>
+<div>
+	<label for="Qualifications">Qualification:</label>
       <br>
-      <input type="radio" name="Qualification_group_ug" id="Qualification_group_ug" value="undergraduate" required>
-      <label for="Qualification_group_ug">Undergraduate</label>
-      <br>
-      <input type="radio" name="Qualification_group_pg" id="Qualification_group_pg" value="postgraduate" required>
-      <label for="Qualification_group_pg">Postgraduate</label>
-      <br>
-      <div id="Qualification_options">
-        </div>
-    </div>
-    <div>
+      	<input type="radio" name="Intermediate" id="BIPC" value="BIPC" required> 
+      <label for="BIPC">BIPC</label>
+     	 <input type="radio" name="Intermediate" id="MPC" value="MPC" required> 
+      <label for="MPC">MPC</label>
+	<input type="radio" name="Intermediate" id="MEC" value="MEC" required> 
+      <label for="MEC">MEC</label>
+	<input type="radio" name="Intermediate" id="CEC" value="CEC" required> 
+      <label for="CEC">CEC</label>
+	<input type="radio" name="Intermediate" id="HEC" value="HEC" required> 
+      <label for="HEC">HEC</label>
+</div>
+
+<div>
       <label for="groups">Groups (Select all that apply):</label>
       <br>
       <input type="checkbox" name="groups[]" value="group1"> Group 1<br>
       <input type="checkbox" name="groups[]" value="group2"> Group 2<br>
       <input type="checkbox" name="groups[]" value="group3"> Group 3
-    </div>
-    <div>
+</div>
+
+<div>
       <label for="Passport_photo">Upload Passport Size Photo:</label>
       <input type="file" name="Passport_photo" id="Passport_photo" accept="image/*">
-    </div>
-    <div>
+</div>
+
+<div>
       <label for="Signature">Upload Signature:</label>
       <input type="file" name="Signature" id="Signature" accept="image/*">
-    </div>
+</div>
+
+<div>
+      <label for="Certificates">Upload Qlf.Certificates PDF Only:</label>
+      <input type="file" name="Certificates" id="Certificates" accept="pdf/*">
+</div>
+
+<div>
+      <label for="Description">Description:</label>
+      <textarea name="Description" id="Description" rows="1" required></textarea>
+</div>
+
     <div>
       <button type="submit">Submit Application</button>
-    </div>
+
+
+     
   </form>
 </div>
 <!-- Modal HTML -->
