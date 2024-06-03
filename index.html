@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expenses</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Daily Expenses</h1>
+  <p id="data"></p>
+<div class="form-container">
+  <form id="myForm" action="https://script.google.com/macros/s/AKfycbzWXL_l0oT6G_kzKX9UiFWOrRyutqfdbEHjDP_B5YyAZtuJr1MzCJCZS-Ebpjn7WYQpqw/exec" method="post">
+       
+  <h1>Candidate Application Form</h1>
+   <div>
+      <label for="name">Candidate Name:</label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div>
+      <label for="father_name">Father's Name:</label>
+      <input type="text" name="father_name" id="father_name" required>
+    </div>
+    <div>
+      <label for="mother_name">Mother's Name:</label>
+      <input type="text" name="mother_name" id="mother_name" required>
+    </div>
+    <div>
+      <label for="date_of_birth">Date of Birth:</label>
+      <input type="date" name="date_of_birth" id="date_of_birth" required>
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="phone" id="phone" required>
+    </div>
+    <div>
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea name="description" id="description" rows="5" required></textarea>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <br>
+      <input type="radio" name="gender" id="male" value="male" required> 
+      <label for="male">Male</label>
+      <br>
+      <input type="radio" name="gender" id="female" value="female" required> 
+      <label for="female">Female</label>
+    </div>
+    <div>
+      <label>Qualification:</label>
+      <br>
+      <input type="radio" name="qualification_group" id="qualification_group_ug" value="undergraduate" required>
+      <label for="qualification_group_ug">Undergraduate</label>
+      <br>
+      <input type="radio" name="qualification_group" id="qualification_group_pg" value="postgraduate" required>
+      <label for="qualification_group_pg">Postgraduate</label>
+      <br>
+      <div id="qualification_options">
+        </div>
+    </div>
+    <div>
+      <label for="groups">Groups (Select all that apply):</label>
+      <br>
+      <input type="checkbox" name="groups[]" value="group1"> Group 1<br>
+      <input type="checkbox" name="groups[]" value="group2"> Group 2<br>
+      <input type="checkbox" name="groups[]" value="group3"> Group 3
+    </div>
+    <div>
+      <label for="passport_photo">Upload Passport Size Photo:</label>
+      <input type="file" name="passport_photo" id="passport_photo" accept="image/*" required>
+    </div>
+    <div>
+      <label for="signature">Upload Signature:</label>
+      <input type="file" name="signature" id="signature" accept="image/*" required>
+    </div>
+    <div>
+      <button type="submit">Submit Application</button>
+    </div>
+  </form>
+</div>
+<!-- Modal HTML -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalNote"></p>
+  </div>
+</div>
+
+<!-- <div>
+  <textarea name="response" rows="10" cols="30" maxlength=”200”>
+
+  </textarea>
+</div> -->
+
+<!-- <div>
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+  </details>
+</div>
+
+<div>
+  <table style="color: aliceblue;">
+    <tr>
+        <td>Falafel</td>
+        <td>$10.00</td>
+    </tr>
+    <tr>
+        <td>Pasta Salad</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>Dessert</td>
+        <td>$8.00</td>
+    </tr>
+</table>
+</div> -->
+
+<script src="index.js">
+</script>
+</body>
+</html>
