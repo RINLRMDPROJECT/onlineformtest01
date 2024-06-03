@@ -1,4 +1,4 @@
-function showModal(message) {
+function showModal(message, canResubmit) {
   var modal = document.getElementById("myModal");
   var modalNote = document.getElementById("modalNote");
 
@@ -13,6 +13,17 @@ function showModal(message) {
   closeButton.addEventListener("click", function() {
     modal.style.display = "none";
   });
+
+  // Add a button to allow resubmission (if applicable)
+  if (canResubmit) {
+    var submitButton = document.createElement("button");
+    submitButton.textContent = "Resubmit";
+    submitButton.addEventListener("click", function() {
+      document.getElementById("myForm").submit();
+      modal.style.display = "none";
+    });
+    modalNote.appendChild(submitButton);
+  }
 }
 
 // Add event listener to the form submission
@@ -34,7 +45,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
         document.getElementById("myForm").reset(); // Clear the form fields
       } else {
         // Error response
-        showModal("Error: Something went wrong."); // Show a generic error message
+        showModal("Error: Something went wrong. Do you want to resubmit?", true); // Show error with resubmit option
       }
     }
   };
