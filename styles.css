@@ -7,7 +7,7 @@ body {
 }
 
 input[type="text"] {
-    width: 50%;
+    width: 100%;
 }
 input[type="text"] {
     padding: 6px 10px;
@@ -30,7 +30,7 @@ input[type="text"]:focus {
     outline: none;
 }
 textarea {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -45,14 +45,14 @@ input[type="text"] {
     transition: width 0.4s ease-in-out;
 }
 input[type="text"]:focus {
-    width: 50%;
+    width: 100%;
 }
 
 
 
 
 input[type="number"] {
-    width: 50%;
+    width: 100%;
 }
 input[type="number"] {
     padding: 6px 10px;
@@ -75,7 +75,7 @@ input[type="number"]:focus {
     outline: none;
 }
 textarea {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -90,7 +90,7 @@ input[type="number"] {
     transition: width 0.4s ease-in-out;
 }
 input[type="number"]:focus {
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -98,7 +98,7 @@ input[type="number"]:focus {
 
 
 input[type="email"] {
-    width: 50%;
+    width: 100%;
 }
 input[type="email"] {
     padding: 6px 10px;
@@ -121,7 +121,7 @@ input[type="email"]:focus {
     outline: none;
 }
 textarea {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -136,7 +136,7 @@ input[type="email"] {
     transition: width 0.4s ease-in-out;
 }
 input[type="email"]:focus {
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -144,7 +144,7 @@ input[type="email"]:focus {
 
 
 input[type="Description"] {
-    width: 50%;
+    width: 100%;
 }
 input[type="Description"] {
     padding: 6px 10px;
@@ -167,7 +167,7 @@ input[type="Description"]:focus {
     outline: none;
 }
 textarea {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -175,7 +175,7 @@ textarea {
 
 }
 input[type="Description"]:focus {
-    width: 50%;
+    width: 100%;
 }
 
 
