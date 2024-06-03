@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 160vh;
   }
   h1{
     color: red;
@@ -18,7 +18,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 1200px;
+    width: 1100px;
     background-image: url(./man-wondering.jpg);
   }
 
